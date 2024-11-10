@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      main {
+        display: flex;
+        justify-content: space-around;
+      }
+      .leftdiv {
+        margin-left: 2rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 2.5rem;
+        align-content: center;
+        margin-top: 11rem;
+        margin-left: 11rem;
+      }
+      .rightdiv {
+        width: 4rem;
+        height: 5rem;
+        margin-right: 25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <a href="home.html"><img src="pclogo.png" alt="Error" /></a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <div class="navbar">
+                <ul id="menuitems">
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <img
+                src="menu.png"
+                alt="MENU"
+                class="menu"
+                onclick="menudrop()"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="leftdiv">
+        <p style="font-size: 5rem">Manifesting</p>
+        <p style="font-size: 5rem">the Power of</p>
+        <p style="font-size: 5rem">Science</p>
+      </div>
+      <div class="rightdiv">
+        <img src="Design 1.png" alt="Error!" />
+      </div>
+    </main>
+    <script>
+      var menuitems = document.getElementById("menuitems");
+      menuitems.style.maxHeight = "0px";
+      function menudrop() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "600px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

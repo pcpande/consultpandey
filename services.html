@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width, initial-scale=1.0" />
+    <title>PC|Services</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <a href="home.html"><img src="pclogo.png" alt="Error" /></a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <div class="navbar">
+                <ul id="menuitems">
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <img
+                src="menu.png"
+                alt="MENU"
+                class="menu"
+                onclick="menudrop()"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="services">
+      <div class="row">
+        <div class="serv1">
+          <img src="casting.jpg" alt="Error" />
+          <div class="serv2">
+            <p>Steel Mill: Casting and Rolling Operations.</p>
+          </div>
+        </div>
+        <div class="serv1">
+          <img src="machine.jpg" alt="Error" />
+          <div class="serv2">
+            <p>Machine: Review and Setup.</p>
+          </div>
+        </div>
+        <div class="serv1">
+          <img src="eaudit.jpg" alt="Error" />
+          <div class="serv2">
+            <p>Electric Audit.</p>
+          </div>
+        </div>
+        <div class="serv1">
+          <img src="einstallwork.jpg" alt="Error" />
+          <div class="serv2">
+            <p>Electrical Installation Work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var menuitems = document.getElementById("menuitems");
+      menuitems.style.maxHeight = "0px";
+      function menudrop() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "600px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
